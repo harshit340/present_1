@@ -1,0 +1,16 @@
+
+.card {
+  width: 80%;
+  margin:"auto";
+  height: 120vh;
+  background: rgba(57, 89, 246, 0.169);
+  position: relative;
+
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+
+
+
