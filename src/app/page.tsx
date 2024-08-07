@@ -5,7 +5,6 @@ import { RootState } from "@/provider/redux/store";
 import { ChangeAccount } from "@/provider/redux/SetAccount";
 import {  useAnonAadhaar } from '@anon-aadhaar/react';
 import Nav from './Components/Nav';
-import Nav2 from './Components/Nav2';
 import About from './Components/About';
 import meta from "../assets/MetaMask_Fox.svg-removebg-preview.png"
 import { Image } from 'antd';

@@ -6,7 +6,6 @@ import verify from "../../assets/icons8-blockchain-98.png"
 import connnecton from "../../assets/icons8-blockchain-60.png"
 import phone from "../../assets/icons8-speaker-96.png"
 import { Image } from 'antd'
-import InfoCards from './InfoCards'
 
 export default function About() {
     return (

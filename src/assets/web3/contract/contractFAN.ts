@@ -9,6 +9,7 @@ export const transferFantom = async (to:string, amountInWei:string, account:stri
         const signer = await provider!.getSigner(account);
         console.log("Signer:", signer);
         const contractWithSigner = TransferTokenContract.connect(signer);
+        // @ts-ignore
         const tx = await contractWithSigner.transferEther(
             to,
             name,

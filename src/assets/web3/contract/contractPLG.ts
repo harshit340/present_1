@@ -9,6 +9,7 @@ export const transferPolygon = async (to:string, amountInWei:string, account:str
         const signer = await provider!.getSigner(account);
         console.log("Signer:", signer);
         const contractWithSigner = TransferTokenContract.connect(signer);
+        // @ts-ignore
         const tx = await contractWithSigner.transferEther(
             to,
             name,
