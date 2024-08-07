@@ -31,9 +31,9 @@ interface FormValues {
 
 export default function TransferCard() {
   const [current, setCurrent] = React.useState<number>(0);
-  const [Unit, setUnit] = React.useState<FormValues | null>(null);
-  const [security, setSecurity] = React.useState<FormValues | null>(null);
-  const [Transaction, setTransaction] = React.useState<FormValues | null>(null);
+  const [Unit, setUnit] = React.useState<FormValues | undefined>(undefined);
+  const [security, setSecurity] = React.useState<FormValues | undefined>(undefined);
+  const [Transaction, setTransaction] = React.useState<FormValues | undefined>(undefined);
 
   const userName = useSelector((state: RootState) => state.SetUsername.name);
   const accountName = useSelector((state: RootState) => state.SetAccount.name);
@@ -143,7 +143,6 @@ export default function TransferCard() {
       handleBlockChainChange={handleBlockChainChange}
     />,
     <Final
-      onFinish={onFinish}
       goPrevious={goPrevious}
       handleTransfer={handleTransfer}
     />,
@@ -176,7 +175,7 @@ export default function TransferCard() {
 
 interface TransactionIDProps {
   onFinish: (value: FormValues) => void;
-  initialValues: FormValues | null;
+  initialValues: FormValues | undefined;
   handleRecipient: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
   handleAmount: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
 }
@@ -233,7 +232,7 @@ function TransactionID({
 
 interface BlockchainUnitProps {
   onFinish: (value: FormValues) => void;
-  initialValues: FormValues | null;
+  initialValues: FormValues | undefined;
   goPrevious: () => void;
   handleUnitChange: (value: string) => void;
   handleBlockChainChange: (value: string) => void;

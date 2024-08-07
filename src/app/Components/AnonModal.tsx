@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 import '../style/Card.css'
-import AnonNeeds from './AnonNeeds';
 import AnonLogin from './AnonLogin';
 
 const App: React.FC = () => {
@@ -30,7 +29,7 @@ const App: React.FC = () => {
             <p>What you want as to use</p>
          </div>
          <div>
-            <AnonNeeds/>
+            
          </div>
          <div style={{marginTop:"10px 0 10px 0" , fontWeight:"500"}}>
             Use the QR of your Aadhar card 
