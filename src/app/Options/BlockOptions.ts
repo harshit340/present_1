@@ -10,16 +10,23 @@ export const BlockOptions = [
     },
     {
       value: 'BSC',
-      label: 'BNB Smart Chain',
+      label: 'Binance',
     },
     {
-      value: 'BSC',
-      label: 'BNB Smart Chain',
+      value: 'FAN',
+      label: 'Fantom',
     },
     {
-      value: 'BSC',
-      label: 'BNB Smart Chain',
+      value: 'HRN',
+      label: 'Harmony',
     },
-    
+    {
+        value: 'CORE',
+        label: 'CoreDao',
+    },
+    {
+        value: 'CHI',
+        label: 'Chiado',
+    },
   ];
   
