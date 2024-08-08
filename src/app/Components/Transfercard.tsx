@@ -211,6 +211,7 @@ interface TransactionIDProps {
   initialValues: FormValues | undefined;
   handleRecipient: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
   handleAmount: ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
+  connectMetaMask: () => Promise<void>;
 }
 
 function TransactionID({
