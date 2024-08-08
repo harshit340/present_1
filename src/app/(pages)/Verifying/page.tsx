@@ -10,6 +10,10 @@ import toTransferETH from '@/hooks/toTransferETH';
 import toTransferBSC from '@/hooks/toTransferBSC';
 import { RootState } from '@/provider/redux/store';
 import "../../style/Sound2.css"
+import toTransferChiado from "@/hooks/toTransferChiado";
+import toTransferCore from "@/hooks/toTransferCore";
+import toTransferFantom from "@/hooks/toTransferFantom";
+import toTransferHarmony from "@/hooks/toTransferHarmony";
 
 export default function Page() {
   const [type, setType] = useState<string>('ETH');
@@ -65,6 +69,18 @@ export default function Page() {
       } else if (type === 'PLG') {
         const { getContractPolygon } = toTransferPolygon();
         await setupEventListener(getContractPolygon);
+      } else if(type === 'CHI'){
+        const { getContractChiado } = toTransferChiado();
+        await setupEventListener(getContractChiado);
+      } else if(type === 'CORE'){
+        const { getContractCore } = toTransferCore();
+        await setupEventListener(getContractCore);
+      } else if (type === 'FAN') {
+        const { getContractFantom } = toTransferFantom();
+        await setupEventListener(getContractFantom);
+      } else if( type === 'HRN'){
+        const { getContractHarmony } = toTransferHarmony();
+        await setupEventListener(getContractHarmony);
       }
     };
 
@@ -99,11 +115,6 @@ export default function Page() {
     <div>
       <Nav />
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2%' }}>
-       
-        
-
-       
-        
           {eventData ? (
             <><Card className="leftyCardss">
               <Card className="leftyCard">
@@ -140,8 +151,12 @@ export default function Page() {
                   }}
                 >
                   <option value="ETH">Ethereum</option>
-                  <option value="BSC">Binance Smart Chain</option>
+                  <option value="BSC">Binance</option>
                   <option value="PLG">Polygon</option>
+                  <option value="CHI">Chiado</option>
+                  <option value="HRN">Harmony</option>
+                  <option value="FAN">Fantom</option>
+                  <option value="CORE">Coredao</option>
                 </select>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '10%' }}>

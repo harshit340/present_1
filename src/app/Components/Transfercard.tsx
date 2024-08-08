@@ -21,6 +21,8 @@ import { transferPolygon } from "@/assets/web3/contract/contractPLG";
 import { transferFantom } from "@/assets/web3/contract/contractFAN";
 import { transferHarmony } from "@/assets/web3/contract/contractHRM";
 import meta from "../../assets/MetaMask_Fox.svg-removebg-preview.png"
+import {transferCore} from "@/assets/web3/contract/contractCore";
+import {transferChiado} from "@/assets/web3/contract/contractChiado";
 
 interface FormValues {
   username?: string;
@@ -68,6 +70,12 @@ export default function TransferCard() {
         dispatch(ChangeTxHash(Hash));
       } else if (type === "HRN") {
         Hash = await transferHarmony(to, convertedAmounts, account, unit, blockchain);
+        dispatch(ChangeTxHash(Hash));
+      } else if (type === "CORE") {
+        Hash = await transferCore(to, convertedAmounts, account, unit, blockchain);
+        dispatch(ChangeTxHash(Hash));
+      } else if( type === "CHI"){
+        Hash = await transferChiado(to, convertedAmounts, account, unit, blockchain);
         dispatch(ChangeTxHash(Hash));
       }
     } catch (error) {
