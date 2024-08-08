@@ -45,8 +45,8 @@ export default function Home() {
             <Nav />
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", marginTop: "10%" }}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                    <div style={{ fontSize: "65px", fontWeight: 400, color:"#D3D3D3" }}>Multi-Chain Ethereum Transfers</div>
-                    <div style={{ fontSize: "65px", fontWeight: 400 , marginTop:"-3%", color:"#D3D3D3"}}> with Anon Aadhaar KYC</div>
+                    <div style={{ fontSize: "65px", fontWeight: 400, color:"#D3D3D3" }}>NextPay: Mutli EVM transactions</div>
+                    <div style={{ fontSize: "65px", fontWeight: 400 , marginTop:"-3%", color:"#D3D3D3"}}> with zero Proofs</div>
                     <div style={{ fontSize: "20px", color: "#FFFFF0" ,marginTop:"5%" }}>Seamless Ethereum transfers across multiple blockchains with anonymous Aadhaar-based KYC</div></div>
                 <div style={{ marginTop: "5%" }}>
                 
@@ -61,7 +61,7 @@ export default function Home() {
                     </>:
                     <> <button className="Documents-btn" onClick={connectMetaMask}>
                     <span className="folderContainer">
-                     <Image preview={false} src={meta.src}></Image>
+                     <Image  preview={false} src={meta.src}></Image>
                     </span>
                     <p className="text">Connect</p>
                   </button></>}
