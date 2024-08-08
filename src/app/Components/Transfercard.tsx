@@ -23,7 +23,7 @@ import meta from "../../assets/MetaMask_Fox.svg-removebg-preview.png"
 import {transferCore} from "@/assets/web3/contract/contractCore";
 import {transferChiado} from "@/assets/web3/contract/contractChiado";
 import { ChangeAccount } from "@/provider/redux/SetAccount";
-
+import { Cover } from "./sparkles/cover";
 
 interface FormValues {
   username?: string;
@@ -188,7 +188,9 @@ export default function TransferCard() {
           <button className="buttonn">Anon Aadhar</button>
         </div>
         <div>
-          <div className="left-head1">Your Completely Secure Transaction Platform</div>
+          <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+            <Cover>Your Ultimate Secure Transaction Hub</Cover>
+          </h1>
         </div>
         <div>
           <div>
