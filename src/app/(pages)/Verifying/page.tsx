@@ -93,7 +93,7 @@ export default function Page() {
 
   useEffect(() => {
     if (eventData) {
-      const message = `${eventData.from} sent ${eventData.amount} to ${eventData.to} on ${eventData.blockchain} blockchain with name ${eventData.name}`;
+      const message = `Received ${eventData.amount} ETH on ${eventData.blockchain} originally sent in unit ${eventData.name}`;
       console.log('Speaking:', message);
       speak(message);
     }
@@ -107,7 +107,7 @@ export default function Page() {
 
     const utterance = new SpeechSynthesisUtterance(text);
     const voices = speechSynthesis.getVoices();
-    utterance.voice = voices[0] || null; // Use the first available voice or null
+    utterance.voice = voices[0] || null;
     speechSynthesis.speak(utterance);
   };
 
