@@ -54,14 +54,14 @@ export default function Home() {
                     <>
                     <button className="Documents-btn" onClick={connectMetaMask}>
   <span className="folderContainer">
-  <Image src={meta.src}></Image>
+  <Image preview={false} src={meta.src}></Image>
   </span>
   <p className="text" >Connected</p>
 </button>
                     </>:
                     <> <button className="Documents-btn" onClick={connectMetaMask}>
                     <span className="folderContainer">
-                     <Image src={meta.src}></Image>
+                     <Image preview={false} src={meta.src}></Image>
                     </span>
                     <p className="text">Connect</p>
                   </button></>}

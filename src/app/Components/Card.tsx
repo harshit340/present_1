@@ -28,7 +28,7 @@ export default function Card() {
                     >
                         <div>
                             <div style={{display:"flex" , justifyContent:"center"}}>
-                            <Image src={Checker.src} width={85} height={90} ></Image>
+                            <Image preview={false} src={Checker.src} width={85} height={90} ></Image>
                             </div>
                             
                             
@@ -48,7 +48,7 @@ export default function Card() {
                     >
                         <div>
                             <div style={{display:"flex" , justifyContent:"center"}}>
-                            <Image src={identity.src} width={85} height={90} ></Image>
+                            <Image preview={false} src={identity.src} width={85} height={90} ></Image>
                             </div>
                             
                             <p className="text-[0.85em]" style={{marginTop:"15%",fontSize:"16px"}}>
@@ -67,7 +67,7 @@ export default function Card() {
                     >
                         <div>
                             <div style={{display:"flex" , justifyContent:"center"}}>
-                            <Image src={eighteen.src} width={85} height={90} ></Image>
+                            <Image  preview={false} src={eighteen.src} width={85} height={90} ></Image>
                             </div>
                             
                             <p className="text-[0.85em]" style={{marginTop:"15%",fontSize:"16px"}}>

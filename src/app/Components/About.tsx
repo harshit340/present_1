@@ -18,7 +18,7 @@ export default function About() {
                     >
                         <div>
                             <div style={{display:"flex" , justifyContent:"center"}}>
-                            <Image src={verify.src} width={85} height={90} ></Image>
+                            <Image preview={false} src={verify.src} width={85} height={90} ></Image>
                             </div>
                             
                             <p className="text-[0.85em]" style={{marginTop:"15%",fontSize:"16px"}}>
@@ -35,7 +35,7 @@ export default function About() {
                         className="h-[22em] w-[20em] border-2 border-[rgba(75,30,133,0.5)] rounded-[1.5em] bg-gradient-to-br from-[#5a58d76c] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px]"
                     >
                         <div>
-                            <div style={{display:"flex", justifyContent:"center"}}><Image src={connnecton.src}  width={85} height={90}></Image></div>
+                            <div style={{display:"flex", justifyContent:"center"}}><Image preview={false} src={connnecton.src}  width={85} height={90}></Image></div>
                             
                             <p className="text-[0.85em]" style={{marginTop:"15%",fontSize:"16px"}}>
                             Transfer Ethereum across multiple EVM-based blockchains in various currencies with ease and security.
@@ -53,7 +53,7 @@ export default function About() {
                     >
                         <div>
                             <div style={{display:"flex", justifyContent:"center"}}>
-                            <Image src={phone.src}  width={85} height={90}></Image>    
+                            <Image preview={false} src={phone.src}  width={85} height={90}></Image>    
                             </div>
                             
                             <p className="text-[0.85em]" style={{marginTop:"15%" , fontSize:"16px"}}>

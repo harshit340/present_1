@@ -112,9 +112,8 @@ export default function Page() {
               <h1 style={{fontSize:"50px" , textAlign:"center"}}>{eventData.amount} <span>ETH</span> </h1>
               
               <div className="details" style={{color:"white" , marginTop:"6%" , textAlign:"center"}}>
-                  <p className='tran-id'><strong style={{marginRight:"20px"}}>Receipt ID :</strong> {eventData.from}</p>
-                  <p className='tran-id'><strong style={{marginRight:"20px"}}>Invoice ID :</strong> {eventData.to}</p>
-                  <p className='tran-id'><strong style={{marginRight:"25px"}}>Receipt ID :</strong>{eventData.to}</p>
+                  <p className='tran-id'><strong style={{marginRight:"20px"}}>Sender ID :</strong> {eventData.from}</p>
+                  <p className='tran-id'><strong style={{marginRight:"20px"}}>Receiver ID :</strong> {eventData.to}</p>
                   <p className='tran-id'><strong style={{marginRight:"20px"}}>Unit :</strong>{eventData.name}</p>
                   
               </div></div></Card></Card>

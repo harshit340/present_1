@@ -39,6 +39,9 @@ export default function Nav() {
                 <span className="header-nav"> <Link href="/Verifying">
                   SoundBox
                 </Link></span>
+                <span className="header-nav"> <Link href="/anon-verify">
+                  AnonVerify
+                </Link></span>
               </div>
               <div>
                 <Link href="/transfer">

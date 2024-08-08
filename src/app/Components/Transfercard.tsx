@@ -223,7 +223,7 @@ function TransactionID({
         Next
       </Button>
       <div style={{textAlign:"center" , marginTop:"4%" , color:"white" , cursor:"pointer" , display:"flex" , justifyContent:"center" , alignContent:"center" , alignItems:"center"}}>
-        <Image src={meta.src} width={40} height={40}></Image>
+        <Image  preview={false} src={meta.src} width={40} height={40}></Image>
         <div style={{marginLeft:"2%"}}>Sync with MetaMask</div>
       </div>
     </Form>
