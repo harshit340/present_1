@@ -45,7 +45,7 @@ export default function Nav() {
                   AnonVerify
                 </Link></span>
               </div>
-              <div>
+              <div style={{display:"flex" ,justifyContent:"center" , alignContent:"center" , alignItems:"center" , marginRight:"3%"}}>
                 <Link href="/transfer">
                   Verified
                 </Link>
@@ -72,7 +72,7 @@ export default function Nav() {
                 </Link></span>
                 <span className="header-nav">How to use</span>
               </div>
-              <div>
+              <div style={{display:"flex" ,justifyContent:"center" , alignContent:"center" , alignItems:"center" , marginRight:"3%"}}>
                 <Link href="/anon-verify">
                   🔒 Verify
                 </Link>

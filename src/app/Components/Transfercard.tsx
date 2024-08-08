@@ -5,7 +5,6 @@ import { Card, Form, Input, Select, Button, Image } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import { BlockOptions } from "@/app/Options/BlockOptions";
 import { UnitOptions } from "@/app/Options/UnitOptions";
-import TransactionCard from "./TransactionCard";
 import "../style/TransactionForm.css";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/provider/redux/store";
@@ -23,6 +22,8 @@ import { transferHarmony } from "@/assets/web3/contract/contractHRM";
 import meta from "../../assets/MetaMask_Fox.svg-removebg-preview.png"
 import {transferCore} from "@/assets/web3/contract/contractCore";
 import {transferChiado} from "@/assets/web3/contract/contractChiado";
+import { ChangeAccount } from "@/provider/redux/SetAccount";
+
 
 interface FormValues {
   username?: string;
@@ -45,6 +46,29 @@ export default function TransferCard() {
   const amount = useSelector((state: RootState) => state.SetAmount.amount);
   const [recipient, setRecipient] = useState<string>("");
   const dispatch = useDispatch();
+
+
+    
+
+    
+
+    const connectMetaMask = async () => {
+        console.log(accountName)
+        if (window.ethereum) {
+            try {
+                const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
+                dispatch(ChangeAccount(accounts[0]));
+            } catch (error) {
+                const errorMessage = (error as any).code === 4001
+                    ? "MetaMask connection request was rejected by the user."
+                    : "An error occurred while connecting to MetaMask. Please try again.";
+                alert(errorMessage);
+                console.error(error);
+            }
+        } else {
+            alert("MetaMask extension not detected!");
+        }
+    };
 
   async function callContract(
     type: string,
@@ -142,6 +166,7 @@ export default function TransferCard() {
       initialValues={Transaction}
       handleRecipient={handleRecipient}
       handleAmount={handleAmount}
+      connectMetaMask={connectMetaMask}
     />,
     <BlockchainUnit
       onFinish={onFinishUNITForm}
@@ -193,7 +218,10 @@ function TransactionID({
   initialValues,
   handleRecipient,
   handleAmount,
+  connectMetaMask,
 }: TransactionIDProps) {
+
+  
   return (
     <Form
       layout="vertical"
@@ -230,7 +258,7 @@ function TransactionID({
       <Button className="button-inner" type="primary" htmlType="submit">
         Next
       </Button>
-      <div style={{textAlign:"center" , marginTop:"4%" , color:"white" , cursor:"pointer" , display:"flex" , justifyContent:"center" , alignContent:"center" , alignItems:"center"}}>
+      <div style={{textAlign:"center" , marginTop:"4%" , color:"white" , cursor:"pointer" , display:"flex" , justifyContent:"center" , alignContent:"center" , alignItems:"center"}} onClick={connectMetaMask}>
         <Image  preview={false} src={meta.src} width={40} height={40}></Image>
         <div style={{marginLeft:"2%"}}>Sync with MetaMask</div>
       </div>
