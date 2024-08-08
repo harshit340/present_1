@@ -31,7 +31,7 @@ export default function Nav() {
           <div className="atmax">
             <div className="nav-ini">
               <div className="left-nav">
-                <div><Image preview={false} src={Logo.src} ></Image></div>
+              <Image preview={false} src={Logo.src} width={100} ></Image>
                 <span className="header-nav"><Link href="/">
                   Home
                 </Link></span>
@@ -66,7 +66,7 @@ export default function Nav() {
           <div className="atmax">
             <div className="nav-ini">
               <div className="left-nav">
-                <div><Image preview={false} src={Logo.src}></Image></div>
+              <Image preview={false} src={Logo.src} width={100} ></Image>
                 <span className="header-nav"><Link href="/">
                   Home
                 </Link></span>
@@ -82,7 +82,7 @@ export default function Nav() {
 
           <div className="atmin">
             <div className="nav-ini">
-              <div><Image preview={false} src={Logo.src}></Image></div>
+            <Image preview={false} src={Logo.src} width={100} ></Image>
               <SideBar />
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function Nav() {
 
           <div className="atmin">
             <div className="nav-ini">
-              <div><Image preview={false} src={Logo.src}></Image></div>
+            <Image preview={false} src={Logo.src} width={100} ></Image>
               <SideBar />
             </div>
           </div>
