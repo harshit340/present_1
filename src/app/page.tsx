@@ -8,6 +8,8 @@ import Nav from './Components/Nav';
 import About from './Components/About';
 import meta from "../assets/MetaMask_Fox.svg-removebg-preview.png"
 import { Image } from 'antd';
+import "../app/style/main.css"
+import MeteorCard from './Components/metorComponent';
   
 
 export default function Home() {
@@ -44,10 +46,14 @@ export default function Home() {
         <div >
             <Nav />
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", marginTop: "10%" }}>
-                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                    <div style={{ fontSize: "65px", fontWeight: 400, color:"#D3D3D3" }}>NextPay: Mutli EVM transactions</div>
-                    <div style={{ fontSize: "65px", fontWeight: 400 , marginTop:"-3%", color:"#D3D3D3"}}> with zero Proofs</div>
-                    <div style={{ fontSize: "20px", color: "#FFFFF0" ,marginTop:"5%" }}>Seamless Ethereum transfers across multiple blockchains with anonymous Aadhaar-based KYC</div></div>
+                <div className="hero BigText text-center mb-2">
+                    <h1 className="text-s mb-[-20px]">NextPay: Mutli EVM transactions</h1>
+                    <h1 className="text-s">with zero Proofs</h1>
+                    <h1 className="text2 mt-4">
+                    Seamless Ethereum transfers across multiple blockchains with anonymous Aadhaar-based KYC
+                    </h1>
+                </div>
+                
                 <div style={{ marginTop: "5%" }}>
                 
                     {accountName?
@@ -71,19 +77,20 @@ export default function Home() {
             
             
             <div>
-                <div style={{display:"flex" , justifyContent:"center" , fontSize:"60px" , marginTop:"20%"}}>
-                     How it works Step - by - Step Guide
+                <div style={{display:"flex" , justifyContent:"center" , alignItems : "center" , marginTop:"20%"}}>
+                    <h1 className='text-section'>How It Works!</h1>
                 </div>
                 <div style={{display:"flex" , justifyContent:"center" ,color:"gainsboro"}}>
-                Payu: Effortless multi-chain Ethereum transfers with secure KYC and real-time alerts
+                    <h1 className='text2'>Payu: Effortless multi-chain Ethereum transfers with secure KYC and real-time alerts</h1>
                 </div>
                 <div>
 
                 </div>
             </div>
             
+                 {/* <About/> */}
             <div style={{marginTop:"4%" , marginBottom:"6%" }}>
-                 <About/>
+                 <MeteorCard/>
             </div>
            
 

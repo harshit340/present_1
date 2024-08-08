@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from "@/provider/redux/store";
 import Logo from "../../assets/image-removebg-preview.png"
 import Link from 'next/link';
-import { Image } from 'antd';
+import { Button, Image } from 'antd';
 
 export default function Nav() {
   
@@ -32,18 +32,18 @@ export default function Nav() {
             <div className="nav-ini">
               <div className="left-nav">
               <Image preview={false} src={Logo.src} width={100} ></Image>
-                <span className="header-nav"><Link href="/">
+                <Button className="header-nav"><Link href="/">
                   Home
-                </Link></span>
-                <span className="header-nav"><Link href="/transfer">
+                </Link></Button>Button
+                <Button className="header-nav"><Link href="/transfer">
                   Transfer
-                </Link></span>
-                <span className="header-nav"> <Link href="/Verifying">
+                </Link></Button>
+                <Button className="header-nav"> <Link href="/Verifying">
                   SoundBox
-                </Link></span>
-                <span className="header-nav"> <Link href="/anon-verify">
+                </Link></Button>
+                <Button className="header-nav"> <Link href="/anon-verify">
                   AnonVerify
-                </Link></span>
+                </Link></Button>
               </div>
               <div style={{display:"flex" ,justifyContent:"center" , alignContent:"center" , alignItems:"center" , marginRight:"3%"}}>
                 <Link href="/transfer">
@@ -67,14 +67,16 @@ export default function Nav() {
             <div className="nav-ini">
               <div className="left-nav">
               <Image preview={false} src={Logo.src} width={100} ></Image>
-                <span className="header-nav"><Link href="/">
+                <Button className="header-nav"><Link href="/">
                   Home
-                </Link></span>
-                <span className="header-nav">How to use</span>
+                </Link></Button>
+                <Button className="header-nav">How to use</Button>
               </div>
               <div style={{display:"flex" ,justifyContent:"center" , alignContent:"center" , alignItems:"center" , marginRight:"3%"}}>
                 <Link href="/anon-verify">
-                  🔒 Verify
+                  <Button style={{ backgroundColor : "white" , border : "1px solid white" , width : "150px" , borderRadius : "20px" , height : "35px" , fontSize : "20px" , color : "black" , fontWeight : "600"}}>
+                    <div style={{ borderRadius : "50%" , border : "15px solid #4BFCE6" }}></div>Verify
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -94,10 +96,10 @@ export default function Nav() {
             <div className="nav-ini">
               <nav className="left-nav">
               <Image preview={false} src={Logo.src} width={100} ></Image>
-                <span className="header-nav"> <Link href="/">
+                <Button className="header-nav"> <Link href="/">
                   Home
-                </Link></span>
-                <span className="header-nav">How to use</span>
+                </Link></Button>
+                <Button className="header-nav">How to use</Button>
               </nav>
             </div>
           </div>
