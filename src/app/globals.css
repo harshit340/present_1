@@ -98,7 +98,7 @@
   body {
     color: rgb(var(--foreground-rgb));
     background: rgb(4,2,38);
-  background: radial-gradient(circle, rgba(91, 83, 234, 0.63) 0%, rgba(0,0,5,1) 87%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.63) 0%, rgba(0,0,5,1) 87%);
   }
   
   a {
