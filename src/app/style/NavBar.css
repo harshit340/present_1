@@ -24,6 +24,7 @@
   border-radius: 10px;
 }
 
+
 @media(max-width:600px){
   .atmax{
     display: none;
@@ -43,7 +44,7 @@
   width: 95.02px;
   height: 42.66px;
   border: none;
-  background-color: #3653f8;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;

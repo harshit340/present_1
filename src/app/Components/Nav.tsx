@@ -74,8 +74,8 @@ export default function Nav() {
               </div>
               <div style={{display:"flex" ,justifyContent:"center" , alignContent:"center" , alignItems:"center" , marginRight:"3%"}}>
                 <Link href="/anon-verify">
-                  <Button style={{ backgroundColor : "white" , border : "1px solid white" , width : "150px" , borderRadius : "20px" , height : "35px" , fontSize : "20px" , color : "black" , fontWeight : "600"}}>
-                    <div style={{ borderRadius : "50%" , border : "15px solid #4BFCE6" }}></div>Verify
+                  <Button style={{ backgroundColor : "black" , width : "150px" , borderRadius : "20px" , height : "35px" , fontSize : "20px" , color : "white" , fontWeight : "600"}}>
+                    Verify
                   </Button>
                 </Link>
               </div>
