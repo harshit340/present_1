@@ -18,8 +18,12 @@
 .header-nav{
   margin-left: 30px;
   font-size: 16px;
-  color:rgb(172, 167, 167);
+  color:white;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 10px;
 }
+
 
 @media(max-width:600px){
   .atmax{
@@ -40,7 +44,7 @@
   width: 95.02px;
   height: 42.66px;
   border: none;
-  background-color: #3653f8;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
