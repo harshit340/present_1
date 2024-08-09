@@ -5,20 +5,20 @@ For better understanding of the project, please refer to the [nextPay Documentat
 ## Video Demonstration
    You can watch the video demonstration of the project by clicking on the image below.
 
-   [![Watch the video](doc-assets\cross-blockchain\front1.png)](https://youtu.be/lpoVuFI_0yQ)
+   [![Watch the video](doc-assets/cross-blockchain/front1.png)](https://youtu.be/lpoVuFI_0yQ)
 
 ## Getting Started with nextPay 🚀
 
 Once you have set up the development environment, you can start exploring and contributing to the nextPay platform. Here are a few key features to get you started:
 
 - **Anon Aadhaar Integration:** Understand the implementation of the secure, anonymous KYC process using Aadhaar. 🔒
-![Anon Aadhar](doc-assets\cross-blockchain\Screenshot 2024-08-09 072913.png)
+![Anon Aadhar](doc-assets/cross-blockchain/Screenshot%202024-08-09%20072913.png)
 
 - **Cross-Blockchain Payments:** Explore the code that enables seamless Ethereum transfers across multiple EVM-compatible blockchains. 🔗
-![Cross Blockchain Transactions](doc-assets\cross-blockchain\Screenshot 2024-08-09 072952.png)
+![Cross Blockchain Transactions](doc-assets/cross-blockchain/Screenshot%202024-08-09%20072952.png)
 
 - **Soundbox:** Dive into the real-time audio notification system that keeps users informed about their transactions. 🔊
-![Cross Blockchain Transactions](doc-assets\soundbox\Screenshot 2024-08-09 073134.png)
+![Cross Blockchain Transactions](doc-assets/soundbox/Screenshot%202024-08-09%20073134.png)
 
 - **Competition & Roadmap:** Stay updated on the platform's development by contributing to challenges and roadmap discussions. 🏆
 - **FAQs:** Review the frequently asked questions to deepen your understanding of the nextPay ecosystem. ❓
@@ -68,4 +68,3 @@ So, what are you waiting for? Start your nextPay contribution journey today! �
 7. **Submit a Pull Request**
    - Go to the [nextPay GitHub repository](https://github.com/nextPay/nextPay) and create a new pull request from your forked repository and branch.
    - Provide a clear and concise description of your changes in the pull request. 🔄
-
