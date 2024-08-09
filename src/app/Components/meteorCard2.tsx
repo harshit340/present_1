@@ -35,9 +35,7 @@ export default function MeteorCard2 (){
                 Extract data and signature from the Aadhaar QR code. Verify the RSA signature using the UIDAI public key. Hash the signed data using SHA-256.
             </p>
     
-            <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-                Explore
-            </button>
+           
     
             {/* Meaty part - Meteor effect */}
             <Meteors number={20} />
@@ -75,9 +73,7 @@ export default function MeteorCard2 (){
                 Verify the RSA signature on the hashed data. Extract identity fields and compute nullifiers. Convert timestamp to UNIX UTC. Optionally sign the signal hash.
             </p>
     
-            <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-                Explore
-            </button>
+           
     
             {/* Meaty part - Meteor effect */}
             <Meteors number={20} />
@@ -117,9 +113,7 @@ export default function MeteorCard2 (){
                 Check if the user is 18+ based on the extracted data. Allow access if eligible, otherwise deny. Complete onboarding and store the zk-SNARK proof.
             </p>
     
-            <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-                Explore
-            </button>
+           
     
             {/* Meaty part - Meteor effect */}
             <Meteors number={20} />

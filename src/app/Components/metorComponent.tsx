@@ -35,9 +35,7 @@ export default function MeteorCard (){
                 Effortlessly verify your identity with our anonymous, Aadhaar-based KYC system. Enjoy fast, private, and secure onboarding, ensuring your personal information stays protected while you get started quickly.
             </p>
     
-            <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-                Explore
-            </button>
+            
     
             {/* Meaty part - Meteor effect */}
             <Meteors number={20} />
@@ -75,9 +73,7 @@ export default function MeteorCard (){
                 Seamlessly transfer Ethereum across multiple EVM-based blockchains in various currencies. Experience secure and easy transactions, ensuring your assets are moved safely and efficiently across different networks.
             </p>
     
-            <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-                Explore
-            </button>
+          
     
             {/* Meaty part - Meteor effect */}
             <Meteors number={20} />
@@ -117,9 +113,7 @@ export default function MeteorCard (){
                 Stay informed with real-time audio notifications for your transactions. Select specific blockchains to monitor and receive precise updates, ensuring you're always aware of the latest activity.
             </p>
     
-            <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-                Explore
-            </button>
+          
     
             {/* Meaty part - Meteor effect */}
             <Meteors number={20} />

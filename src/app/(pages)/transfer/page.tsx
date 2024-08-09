@@ -19,10 +19,10 @@ export default function Page() {
   return (
     <div>
       <Nav />
-      <div style={{display:"flex"}}>
-     
-   </div>
-   <Transfercard/> 
+      <div style={{ marginTop:"-6%"}}>
+        <Transfercard /> 
+      </div>
+   
    </div>
   );
 }

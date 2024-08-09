@@ -183,7 +183,7 @@ export default function TransferCard() {
 
   return (
     <div className="transfer-card-container">
-      <div className="left-part">
+      <div className="left-part" style={{marginTop:"9%"}}>
         <div>
           <button className="buttonn">Anon Aadhar</button>
         </div>
@@ -193,11 +193,9 @@ export default function TransferCard() {
           </h1>
         </div>
         <div>
-          <div>
-            Lorem idivsum dolor sit amet, consectetuer adidiviscing elit. Aenean commodo
-            ligula eget dolor. Aenean massa
-          </div>
-          <div>Lorem idivsum dolor sit amet, consectetuer adidiviscing elit. </div>
+          <div style={{fontSize: 20}}>
+          Our application, NextPay, currently supports multiple EVM-based blockchains across various networks.
+          It also synchronizes with MetaMask to seamlessly track changes in accounts and different blockchains.</div>
         </div>
       </div>
       <div className="right-part">
