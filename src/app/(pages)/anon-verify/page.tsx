@@ -16,7 +16,7 @@ export default function page() {
     <div>
       <Nav />
       <div style={{ marginTop: "-3%" }}>
-        <div style={{zIndex:"1"}}>
+        <div style={{zIndex:"1" , marginBottom : "300px"}}>
           <Card />
         </div>
         
