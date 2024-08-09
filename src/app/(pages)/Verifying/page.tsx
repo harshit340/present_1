@@ -132,36 +132,56 @@ export default function Page() {
           ) : (
             <Card className="leftyCardss">
             <Card className="leftyCard">
-              <div style={{ color: 'white', textAlign: 'center', fontSize: '30px', marginTop: '8%' }}>
-                Choose BlockChain
-              </div>
+            <div
+          style={{
+    color: 'white',
+    textAlign: 'center',
+    fontSize: '35px',
+    marginTop: '6%',
+    fontWeight: 'bold',
+  }}
+  className="rainbow-background glow-text"
+>
+  CHOOSE BLOCKCHAIN
+</div>
               <div style={{ display: 'flex', justifyContent: 'center', marginTop: '5%' }}>
                 <select
                   onChange={(e) => setType(e.target.value)}
                   value={type}
                   style={{
                     backgroundColor: 'rgba(34, 34, 84, 0.32)',
-                    border: '2px solid white',
+                    border: '2px solid rgb(187, 207, 255)',
                     width: '70%',
                     height: '40px',
                     color: 'white',
                     borderRadius: '2rem',
                     margin: '3%',
+                    boxShadow: '0 0 10px 2px rgba(0, 0, 255, 0.7)', // Add this line for glowing effect
+                    transition: 'box-shadow 0.3s ease-in-out',
+                    padding:"10px 10px 10px 10px"
                   }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.boxShadow = '0 0 15px 2px rgba(0, 0, 255, 1)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.boxShadow = '0 0 5px 1px rgba(0, 0, 255, 0.7)';
+                  }}
+                  
+                  
                 >
-                  <option value="ETH">Ethereum</option>
-                  <option value="BSC">Binance</option>
-                  <option value="PLG">Polygon</option>
-                  <option value="CHI">Chiado</option>
-                  <option value="HRN">Harmony</option>
-                  <option value="FAN">Fantom</option>
-                  <option value="CORE">Coredao</option>
+                 <option  value="ETH">Ethereum</option>
+                 <option  value="BSC">Binance</option>
+                 <option  value="PLG">Polygon</option>
+                 <option  value="CHI">Chiado</option>
+                 <option  value="HRN">Harmony</option>
+                 <option  value="FAN">Fantom</option>
+                 <option  value="CORE">Coredao</option>
                 </select>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '10%' }}>
                 <Loader />
               </div>
-              <div style={{ textAlign: 'center', color: 'white' }}>-------------- Waiting for transactions --------------</div>
+              <div style={{ textAlign: 'center', color: 'rgb(179, 174, 174)' }}>-------------- Waiting for transactions --------------</div>
             </Card></Card>
           )}
         

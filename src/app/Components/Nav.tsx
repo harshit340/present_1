@@ -32,9 +32,9 @@ export default function Nav() {
             <div className="nav-ini">
               <div className="left-nav">
               <Image preview={false} src={Logo.src} width={100} ></Image>
-                <Button className="header-nav"><Link href="/">
+                <Button className="header-nav" ><Link href="/">
                   Home
-                </Link></Button>Button
+                </Link></Button>
                 <Button className="header-nav"><Link href="/transfer">
                   Transfer
                 </Link></Button>
