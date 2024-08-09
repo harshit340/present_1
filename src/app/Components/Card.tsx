@@ -6,22 +6,23 @@ import eighteen from "../../assets/icons8-18-100.png"
 import { Image } from 'antd'
 
 import AnonLogin from './AnonLogin'
+import MeteorCard2 from './meteorCard2'
 export default function Card() {
     return (
         <div style={{display:"flex" , justifyContent:"center" , marginTop:"6%"}} className='Anon-card-align'>
             <div className="card">
-               <div style={{display:"flex" , justifyContent:"center", marginTop:"4%" , fontSize:"46px"}}>
-                Verify Anon-Aadhar
-               </div>
-               <div style={{margin:"2% 6% 0 6%", textAlign:"center", fontSize:"18px"}}>
-               Payu is a decentralized platform that simplifies Ethereum transfers across multiple EVM-based blockchains and various currencies. It features a secure and anonymous Aadhaar-based KYC process for easy onboarding. With Payu's Soundbox, users receive real-time audio notifications for their transactions and can customize alerts based on their selected blockchains. This ensures seamless, secure, and informed financial management.
-
-               </div>
-               <div style={{display:"flex" , justifyContent:"center" , marginTop:"6%"}}>
+               <div className="hero BigText text-center mt-8" style={{ marginTop : "20px"}}>
+                    <h1 className="text">Verify Anon-Aadhar</h1>
+                    <h1 className="text2 mt-4">
+                         Payu is a decentralized platform that simplifies Ethereum transfers across multiple EVM-based blockchains and various currencies. It features a secure and anonymous Aadhaar-based KYC process for easy onboarding. With Payu's Soundbox, users receive real-time audio notifications for their transactions and can customize alerts based on their selected blockchains. This ensures seamless, secure, and informed financial management.
+                    </h1>
+                </div>
+               
+               <div style={{display:"flex" , justifyContent:"center" , marginTop:"6%" , marginBottom : "50px"}}>
                 <AnonLogin />
                </div>
 
-               <div className='cards-layout' style={{marginBottom:"8%"}}>
+               {/* <div className='cards-layout' style={{marginBottom:"8%"}}>
            <div className='cards-child'>
                 <div
                         className="h-[22em] w-[20em] border-2 border-[rgba(75,30,133,0.5)] rounded-[1.5em] bg-gradient-to-br from-[#5a58d76c] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px]"
@@ -79,7 +80,8 @@ export default function Card() {
                         
                     </div>
                 </div>
-           </div>
+           </div> */}
+           <MeteorCard2 />
             </div>
         </div>
         
