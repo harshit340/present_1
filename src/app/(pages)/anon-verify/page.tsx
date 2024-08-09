@@ -15,10 +15,13 @@ export default function page() {
   return (
     <div>
       <Nav />
-      <div className='main-align' style={{ marginTop: "-3%" }}>
-        <Card />
+      <div style={{ marginTop: "-3%" }}>
+        <div style={{zIndex:"1"}}>
+          <Card />
+        </div>
+        
 
-        <div style={{ marginTop: "5%" }}>
+        <div style={{ marginTop: "3%" }}>
           <div className="hero text-center mt-8" style={{ marginTop: "100px" }}>
             <h1 className="text-globe">How Does It Exactly Works ?</h1>
           </div>

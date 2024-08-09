@@ -70,7 +70,9 @@ export default function Nav() {
                 <Button className="header-nav"><Link href="/">
                   Home
                 </Link></Button>
-                <Button className="header-nav">How to use</Button>
+                <Button className="header-nav">  <Link href="/https://nextpay-docs.streamlit.app/">
+                  Docs
+                </Link></Button>
               </div>
               <div style={{display:"flex" ,justifyContent:"center" , alignContent:"center" , alignItems:"center" , marginRight:"3%"}}>
                 <Link href="/anon-verify">
@@ -99,7 +101,9 @@ export default function Nav() {
                 <Button className="header-nav"> <Link href="/">
                   Home
                 </Link></Button>
-                <Button className="header-nav">How to use</Button>
+                <Button className="header-nav">  <Link href="/https://nextpay-docs.streamlit.app/">
+                  Docs
+                </Link></Button>
               </nav>
             </div>
           </div>
