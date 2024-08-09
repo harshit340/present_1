@@ -2,6 +2,10 @@
 
 For better understanding of the project, please refer to the [nextPay Documentation](https://nextpay-docs.streamlit.app/). This is the documentation which we have hosted for our product for better usage.
 
+## Video Demonstration
+   
+   [![Watch the video](https://youtu.be/lpoVuFI_0yQ/maxresdefault.jpg)](https://youtu.be/lpoVuFI_0yQ)
+
 ## Setup Instructions 🛠️
 
 1. **Fork the Repository**
