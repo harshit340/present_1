@@ -47,8 +47,8 @@ export default function Home() {
             <Nav />
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", marginTop: "10%" }}>
                 <div className="hero BigText text-center mb-2">
-                    <h1 className="text-s mb-[-20px]">NextPay: Mutli-EVM Transactions</h1>
-                    <h1 className="text-s">with Zero Proofs</h1>
+                    <h1 className="text-s mb-[-20px]" >NextPay: Mutli-EVM Transactions</h1>
+                    <h1 className="text-s ">with Zero Proofs</h1>
                     <h1 className="text2 mt-4" style={{fontWeight:"500"}}>
                     Seamless Ethereum transfers across multiple blockchains with anonymous Aadhaar-based KYC
                     </h1>

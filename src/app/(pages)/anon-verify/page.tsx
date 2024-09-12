@@ -30,11 +30,11 @@ export default function page() {
             </p>
             <br></br>
             <p>
-Aadhaar Secure QR Code: The foundation of this process lies in the Aadhaar Secure QR code, which encapsulates essential identity data. This QR code is signed by the Unique Identification Authority of India (UIDAI) and contains a SHA-256 hash and an RSA signature.Zero-Knowledge Proof Generation: The core of Anon Aadhaar's privacy-preserving magic happens here. The protocol uses zk-SNARKs to create a proof that validates the correctness of the hash and RSA signature without ever exposing the actual data. This ensures that the identity verification is both secure and private.
+Aadhaar Secure QR Code: The foundation of this process lies in the Aadhaar Secure QR code, which encapsulates essential identity data. This QR code is signed by the Unique Identification Authority of India (UIDAI) and contains a SHA-256 hash and an RSA signature.Zero-Knowledge Proof Generation: The core of Anon Aadhaar privacy-preserving magic happens here. The protocol uses zk-SNARKs to create a proof that validates the correctness of the hash and RSA signature without ever exposing the actual data. This ensures that the identity verification is both secure and private.
 
 
             </p><br></br>
-            <p>Circuit Implementation: The underlying cryptographic circuit is designed to process and verify the Aadhaar data. It ensures that the user's identity can be authenticated without directly revealing personal details like name, address, or contact information.</p>
+            <p>Circuit Implementation: The underlying cryptographic circuit is designed to process and verify the Aadhaar data. It ensures that the user identity can be authenticated without directly revealing personal details like name, address, or contact information.</p>
           </div>
         </div>
 

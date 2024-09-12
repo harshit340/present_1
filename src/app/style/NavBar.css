@@ -25,6 +25,8 @@
 }
 
 
+
+
 @media(max-width:600px){
   .atmax{
     display: none;
@@ -124,3 +126,5 @@
 .buttonC .span-mother2 span:nth-child(6) {
   transition: 0.7s;
 }
+
+

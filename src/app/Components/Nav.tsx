@@ -72,7 +72,7 @@ export default function Nav() {
                 </Link></Button>
              
                 <Button className="header-nav">
-                  <a href="https://nextpay-docs.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                  <a /* href="https://nextpay-docs.streamlit.app/" */ target="_blank" rel="noopener noreferrer">
                     Docs
                   </a>
                 </Button>
@@ -105,7 +105,7 @@ export default function Nav() {
                   Home
                 </Link></Button>
                 <Button className="header-nav">
-                  <a href="https://nextpay-docs.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                  <a /* href="https://nextpay-docs.streamlit.app/" */ target="_blank" rel="noopener noreferrer">
                     Docs
                   </a>
                 </Button>
